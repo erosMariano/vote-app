@@ -1,0 +1,47 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model baseVote {
+  id String @id @default(auto()) @map("_id") @db.ObjectId()
+
+  community         String
+  title             String
+  description       String
+  link              String
+  quantityTokens    Int
+  typeVote          Int
+  options           String[]
+  period            Int
+  networkBlockchain Int
+  individualVote    Int?
+  tokenPeopleVote   String[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+}
+
+model User {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId()
+  user     String
+  password String
+}
+
+model Community {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId()
+  name  String
+  photo String
+
+  twitter   String?
+  instagram String?
+  twitch    String?
+}

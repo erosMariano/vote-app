@@ -1,0 +1,22 @@
+Para cadastrar 
+
+
+{
+	"community": "Digitiva",
+	"title": "Mudar a cor do botão",
+	"description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+	"link": "https://teste.com",
+	"quantityTokens": 1,
+	"typeVote": 1,
+	"options": ["Escolha 1", "Escolha 2"],
+	"period": 7,
+	"networkBlockchain": 1,
+	"individualVote": 0
+}
+
+
+// Para votar 
+{
+	"id": "628d4ce538b6f9c651e39cbe",
+	"tokenPeopleVote": "0xE188838C84e8f10398580C62291eC9b1561ba63B"
+}
