@@ -21,8 +21,6 @@ communityRoute.post("/createCommunity", verifyLogin, async (req: Request, res: R
         return res.send("Comunidade cadastrada")
     } catch (err) {
         next(err)
+        console.log(err)
     }
-
-    return res.send("Enviado")
-
 })

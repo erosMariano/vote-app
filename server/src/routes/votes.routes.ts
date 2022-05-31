@@ -41,13 +41,10 @@ votesRoute.post("/adminVote", verifyLogin, async (req: Request, res: Response, n
                 tokenPeopleVote
             }
         })
-        return res.send("Enviado")
+        return res.send("Nova votação criada")
     } catch (err) {
         next(err)
     }
-
-    return res.send("Enviado")
-
 })
 
 
